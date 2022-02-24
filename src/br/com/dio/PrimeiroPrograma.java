@@ -8,8 +8,48 @@ public class PrimeiroPrograma {
         Gato gato = new Gato();
         System.out.println(gato);
 
- /*       int a = 5;
+        Livro livro1 = new Livro("O gato das Botas", 300);
+        System.out.println(livro1);
+
+        int a = 5;
         int b = 3;
-        System.out.println("Hello World " + (a+b));*/
+        System.out.println("Hello World " + (a+b));
+    }
+
+    static class Livro {
+
+        private String nome;
+        private Integer numpages;
+
+        public String getNome() {
+            return nome;
+        }
+
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+
+        public Integer getNumpages() {
+            return numpages;
+        }
+
+        public void setNumpages(Integer numpages) {
+            this.numpages = numpages;
+        }
+
+        public Livro(String nome, Integer numpages) {
+            this.nome = nome;
+            this.numpages = numpages;
+
+
+        }
+
+        @Override
+        public String toString() {
+            return "Livro{" +
+                    "nome='" + nome + '\'' +
+                    ", numpages=" + numpages +
+                    '}';
+        }
     }
 }
